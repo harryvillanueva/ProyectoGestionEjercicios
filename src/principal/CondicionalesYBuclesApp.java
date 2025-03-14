@@ -311,6 +311,49 @@ public class CondicionalesYBuclesApp {
                 gStrings.ejercicio5(palabra);
             }
 
+            case 6 ->{
+
+                System.out.println("ingrese una palabra o frase");
+                String frase = input.getString();
+                System.out.println("ingrese una palabra a buscar");
+                String palabra = input.getString();
+                System.out.println("la laplabra " + palabra + " se repite " + gStrings.ejercicio6(frase,palabra) + " veces ");;
+            }
+
+            case 7 ->{
+
+
+                System.out.println("ingrese una palabra ");
+                String palabra = input.getString();
+                System.out.println("las primeras 5 letras son: " + gStrings.ejercicio7(palabra));
+            }
+
+            case 8 ->{
+
+
+                System.out.println("ingrese una palabra ");
+                String palabra = input.getString();
+                System.out.println(gStrings.ejercicio8(palabra));
+            }
+
+            case 9 ->{
+
+
+                System.out.println("ingrese una palabra ");
+                String palabra = input.getString();
+                System.out.println("ingrese una palabra ");
+                String palabra2 = input.getString();
+                System.out.println(gStrings.ejercicio9(palabra,palabra2));
+            }
+
+            case 10 ->{
+
+
+                System.out.println("ingrese una  frase");
+                String frase = input.getString();
+                System.out.println(gStrings.ejercicio10(frase));
+            }
+
 
         }
     }

@@ -6,6 +6,7 @@ public class Input {
 
     int numero;
     String palabra;
+    char frase;
     Scanner sc = new Scanner(System.in);
 
     private void numero(){
@@ -15,6 +16,8 @@ public class Input {
     private void palabra(){
         palabra = sc.nextLine();
     }
+
+
 
     public int getInt(){
         numero();
