@@ -8,14 +8,18 @@ public class GestionDeArrays {
 
 
     public void ejercicio1(){
+        // Estas seis líneas se repiten en otro método :)
         int [] arrayNumeros = new int[10];
         Random random = new Random();
+
 
         for (int i = 0; i <10 ; i++) {
             arrayNumeros[i] = random.nextInt(100);
             System.out.print(arrayNumeros[i] + " ");
         }
     }
+
+    // Estrategia errónea
 
     public void ejercicio2(){
         int [] arrayNumeros = new int[10];
@@ -28,10 +32,11 @@ public class GestionDeArrays {
         }
         System.out.println();
 
+        // Si usas el mismo valor dos veces (10), ¿mejor una variable?
         for (int i = 0; i <10 ; i++) {
 
             if (numeroMayor > arrayNumeros[i] ){
-                numeroMayor = numeroMayor;
+                numeroMayor = numeroMayor; // ¿?
             }
             else {
                 numeroMayor = arrayNumeros[i] ;
@@ -43,7 +48,7 @@ public class GestionDeArrays {
         System.out.println("el numero mayor es : " + numeroMayor);
     }
 
-
+    // Estrategia errónea
     public void ejercicio3(){
         int [] arrayNumeros = new int[10];
         Random random = new Random();
@@ -86,6 +91,7 @@ public class GestionDeArrays {
 
         for (int i = 0; i <10 ; i++) {
 
+            //sumaArray += arrayNumeros[i]
             sumaArray = sumaArray + arrayNumeros[i];
 
         }
@@ -110,6 +116,9 @@ public class GestionDeArrays {
             sumaArray = sumaArray + arrayNumeros[i];
 
         }
+
+        // Podías haber reutilizado el método anterior para
+        // hallar la suma de los elementos almacenados en el array.
         promedio = sumaArray/10;
         System.out.println("el promedio es : " + promedio);
     }
@@ -152,6 +161,7 @@ public class GestionDeArrays {
 
     }
 
+    // Usa el camelCase para nombrar a las variables / los objetos.
     public static void invertirArray(int[] arrayopuesto) {
         int longitud = arrayopuesto.length;
         for (int i = 0; i < longitud / 2; i++) {
@@ -176,6 +186,7 @@ public class GestionDeArrays {
         System.out.println("array 2 " + Arrays.toString(arrayNumeros2));
 
         int contador= 0;
+        // Debería salir del bucle cuando detecte la primera diferencia.
         for (int i = 0; i <10 ; i++) {
 
             if (arrayNumeros[i] == arrayNumeros2[i]){
@@ -207,7 +218,7 @@ public class GestionDeArrays {
         System.out.println(" \n los numeros pares son:");
 
         for (int i = 0; i <10 ; i++) {
-
+            // Aprovecha estos ejercicios para trabajar con booleanos.
             if ( arrayNumeros[i]%2 ==0 ){
                 System.out.print(arrayNumeros[i] + " ");
             }

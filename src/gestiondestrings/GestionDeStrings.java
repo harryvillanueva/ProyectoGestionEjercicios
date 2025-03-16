@@ -8,10 +8,12 @@ public class GestionDeStrings {
 
         int longitud = palabra.length();
         palabra = palabra.toLowerCase();
-        int contador = 0;
+        int contador = 0; // int numVocales
 
+        // int numVowels = word.replaceAll("[^aeiouAEIOU]", "").length();
         for (int i = 0; i < longitud; i++) {
             char caracter = palabra.charAt(i);
+            Character.is
             if (caracter == 'a' || caracter == 'e'|| caracter == 'i'|| caracter == 'o'|| caracter == 'u' ){
                 contador++;
             }
@@ -25,12 +27,12 @@ public class GestionDeStrings {
 
 
         char[] listaCaracteres = palabra.toCharArray();
-        int longitud = listaCaracteres.length;
+        int longitud = listaCaracteres.length; // int numCaracteres
 
         System.out.println("array original " + new String(listaCaracteres));
 
         for (int i = 0; i < longitud/2; i++) {
-
+            // Has usado el intercambio de valores varias veces durante estos ejercicios: ¿mejor en un método?
             char temp = listaCaracteres[i];
             listaCaracteres[i] = listaCaracteres[longitud-1-i];
             listaCaracteres[longitud-1-i] = temp;
@@ -51,7 +53,7 @@ public class GestionDeStrings {
 
         boolean esPalindromo = false;
         for (int i = 0; i < longitud/2; i++) {
-
+            // esPalindromo = (...);
             if (caracteres[i] == caracteres[longitud-1-i]){
                 esPalindromo = true;
             }else {
@@ -76,7 +78,17 @@ public class GestionDeStrings {
         System.out.println("palabra original " + new String(listaCaracteres));
 
         for (int i = 0; i < longitud; i++) {
-
+            /*
+               switch(listaCaracteres[i])
+               {
+                    case 'a':
+                    case 'e':
+                    ...
+                    case 'u':
+                        listaCaracteres[i] = '*';
+                    default: break;
+                }
+             */
             if (listaCaracteres[i] == 'a' || listaCaracteres[i] == 'e'|| listaCaracteres[i] == 'i'|| listaCaracteres[i] == 'o'|| listaCaracteres[i] == 'u' ){
                 listaCaracteres[i] = '*';
             }
@@ -94,7 +106,7 @@ public class GestionDeStrings {
         char[] listaCaracteres = palabra.toCharArray();
         int longitud = listaCaracteres.length;
 
-        System.out.println("palabra horizontal " + new String(listaCaracteres));
+        System.out.println("palabra horizontal " + new String(listaCaracteres)); // ¿palabra?
 
         System.out.println("palabra vertical");
 
@@ -111,10 +123,10 @@ public class GestionDeStrings {
 
 
         String[] listaPalabras = frase.split(" ");
-        int longitud = listaPalabras.length;
-        int contador=0;
+        int longitud = listaPalabras.length; // int numPalabras
+        int contador=0; // int numOcurrencias = 0;
 
-        String palabraABuscar =palabra;
+        String palabraABuscar =palabra; // ¿?
         for (int i = 0; i < longitud; i++) {
 
 
@@ -131,7 +143,7 @@ public class GestionDeStrings {
     public String ejercicio7(String palabra){
 
 
-        return palabra.substring(0,5);
+        return palabra.substring(0,5); // Usa un bucle :)
 
 
     }
@@ -154,14 +166,14 @@ public class GestionDeStrings {
 
     private char convertirAChar(char caracter){
         int caracterMayuscula = caracter - 32;
-        char caracterNuevo = (char)(caracterMayuscula);
+        char caracterNuevo = (char)(caracterMayuscula); // return (char) caracterMayuscula;
         return caracterNuevo;
     }
 
     public String ejercicio9(String cadena1, String cadena2){
 
 
-
+ // Usa bucles :)
         StringBuilder sb =new StringBuilder();
 
         StringBuilder frase3 = sb.append(cadena1).append(" ").append(cadena2);
@@ -175,6 +187,7 @@ public class GestionDeStrings {
 
     public String ejercicio10(String frase){
 
+        // Usa bucles
        frase = frase.replace(" ", "");
 
         return frase;

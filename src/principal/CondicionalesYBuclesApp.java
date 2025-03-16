@@ -25,7 +25,7 @@ public class CondicionalesYBuclesApp {
 
     }
 
-
+// ¿mejor en Output?
     private static void mostrarMenuBucles(){
         output.mostrarMenuBucles();
     }
@@ -43,7 +43,7 @@ public class CondicionalesYBuclesApp {
         switch (opcionMenu){
             case 1 ->{
                 mostrarMenuConceptosBasicos();
-                System.out.println("ingrese opcion");
+                System.out.println("ingrese opcion"); // ¿Output?
                 int opcion = input.getInt();
                 ejecutarProgramaConceptosBasicos(opcion);
             }

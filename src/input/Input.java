@@ -6,7 +6,7 @@ public class Input {
 
     int numero;
     String palabra;
-    char frase;
+    char frase; // elimina lo que no uses
     Scanner sc = new Scanner(System.in);
 
     private void numero(){
