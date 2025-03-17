@@ -8,6 +8,7 @@ public class Output {
                 2.Ejercicios Condicionales y Bucles
                 3.Ejercicios Arrays
                 4.Ejercicios Strings
+                5.Juego Ahorcado
                 """);
     }
     public void mostrarMenuConceptosBasicos(){

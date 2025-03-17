@@ -1,5 +1,6 @@
 package principal;
 
+import aorcado.Ahorcado;
 import gestionconceptosbasicos.GestionConceptosBasicos;
 import gestiondearrays.GestionDeArrays;
 import gestiondecondicionalesybucles.GestionCondicionalesYBucles;
@@ -64,6 +65,11 @@ public class CondicionalesYBuclesApp {
                 System.out.println("ingrese opcion");
                 int opcion = input.getInt();
                 ejecutarProgramaStrings(opcion);
+            }
+            case 5 ->{
+                Ahorcado.jugar();
+
+
             }
         }
     }
